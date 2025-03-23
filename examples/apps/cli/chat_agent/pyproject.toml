@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zchat"
+version = "0.1.9"
+description = "A personal chat agent CLI using Together AI via AirTrain"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "AirTrain Team"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Communications :: Chat",
+]
+dependencies = [
+    "airtrain",
+    "rich>=12.0.0",
+    "typer>=0.7.0",
+    "python-dotenv>=0.20.0",
+    "requests>=2.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "isort>=5.10.0",
+    "mypy>=0.950",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/airtrain"
+"Bug Tracker" = "https://github.com/yourusername/airtrain/issues"
+
+[project.scripts]
+z = "chat_agent.cli:app"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black" 

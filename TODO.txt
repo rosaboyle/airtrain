@@ -1,0 +1,50 @@
+Examples
+
+zchat to have option to delete previous conversations.
+zchat to have some options to add plugins. Is it possible?
+zchat to check for internet if accesible. If it can access together AI. With a  - Not to be added.
+zchat streaming - Not necessary now.
+zchat allow multi-line input. - Added.
+zchat allow custom prompts - Not.
+
+zagent
+- Will have option for 
+
+zagent-builder.
+- create a zagent-builder which will help in buiding a agent.
+
+
+MCP generation agent
+0. - Chat Agent using CLI.
+    - Allow custom prompt. Allow agent to create a new chat-agent. No new tools.
+    
+1. - Builder to create simple MCPs - target just developers who want to run MCP. But has no idea what an MCP is.
+2. - Then include RAG to it.
+3. - Then include tools like - app building engine, website engine etc,
+4. - Then add the builder to include custom tools.
+5. - Then add long and short term memory. And state management.
+6. - Add memory sharing between agents.
+7. - Agent builder is ready = 1+2+3+4+5+6
+
+
+trmx
+- Add forking the chat.
+- Add creating agents.
+- Add tool usage support. Can you do this? Need to update this on airtrain as well.
+- Fireworks and Together AI make sure this supports the.
+- Check which all agents support tool call and make sure it works well.
+
+
+airtrain
+- Credentials management:
+  - Implement multiple ways to load credentials (environment variables, config files)
+  - Add support for AWS Secrets Manager and Azure Key Vault
+  - Support local encrypted storage for credentials
+  - Integration with other security vaults/managers
+
+- Tool usage:
+  - Improve support for tool usage across all providers
+  - Groq and Sambanova have tool usage but lack structured output - add this
+  - Add proper tool usage for Sambanova and Together AI
+  - Ensure Fireworks tool usage (both structured and unstructured) works correctly
+  - Create comprehensive test suite for tool usage across all providers
